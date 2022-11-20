@@ -1,0 +1,29 @@
+@import'variables';
+
+.box{ 
+position: relative;
+    &__btn{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        background-color: $color1;
+        color:white;
+        font-size: 32px;
+        text-align: center;
+
+        &:active{
+            transform: translateY(4px);
+        }
+    }
+    &__shadow{
+        width: 60px;
+        height: 60px;
+        background-color: $color2;
+        border-radius: 50%;
+        position: absolute;
+        top: 5px;
+        z-index: -1;
+    }
+}
